@@ -14,5 +14,9 @@ export class ConexaoService {
   buscConexao(): Observable<number>{
     return this.httpClient.get<number>(this.url)
   }
+  contarConx(conv: any): number{
+    conv = Number(this.contarConx)
+    return conv;
+  }
 }
 
